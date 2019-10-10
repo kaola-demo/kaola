@@ -1,0 +1,296 @@
+//头部样式
+body{
+    margin: 0;
+    padding: 0;
+}
+header {
+    width: 100%;
+    height: 100px;
+    zoom: 1;
+    margin: 0 auto;
+    position: relative;
+
+    .header-con {
+        width: 1094px;
+        height: 100px;
+        margin: 0 auto;
+        position: relative;
+
+        .logo_kaola_new {
+            background-image: -webkit-image-set(url(//haitao.nos.netease.com/88330630-0c6e-4653-9f0a-92e9ae5a2f42_420_130.png?imageView&thumbnail=210x0&quality=85&v=1) 1x, url(//haitao.nos.netease.com/88330630-0c6e-4653-9f0a-92e9ae5a2f42_420_130.png) 2x);
+            position: absolute;
+            left: 0;
+            top: 20px;
+            width: 330px;
+            height: 65px;
+            line-height: 65px;
+            outline: none;
+            cursor: pointer;
+            z-index: 9;
+            background-repeat: no-repeat;
+            background-position: 0;
+            background-size: auto 65px;
+        }
+        .u-login_topimage {
+            position: absolute;
+            // top: -101px;
+            right: 40px;
+            z-index: 200;
+            height: 100px;
+            width: 504px;
+            background-image: -webkit-image-set(url(https://haitao.nos.netease.com/30bee055-69af-4f3a-a232-5f330cbc98c1_1008_200.png?imageView&thumbnail=504x0&quality=100&v=1) 1x, url(https://haitao.nos.netease.com/30bee055-69af-4f3a-a232-5f330cbc98c1_1008_200.png?imageView&thumbnail=1008x0&quality=100&v=1) 2x);
+            background-image: -moz-image-set(url(https://haitao.nos.netease.com/30bee055-69af-4f3a-a232-5f330cbc98c1_1008_200.png?imageView&thumbnail=504x0&quality=100&v=1) 1x, url(https://haitao.nos.netease.com/30bee055-69af-4f3a-a232-5f330cbc98c1_1008_200.png?imageView&thumbnail=1008x0&quality=100&v=1) 2x);
+            background-image: -ms-image-set(url(https://haitao.nos.netease.com/30bee055-69af-4f3a-a232-5f330cbc98c1_1008_200.png?imageView&thumbnail=504x0&quality=100&v=1) 1x, url(https://haitao.nos.netease.com/30bee055-69af-4f3a-a232-5f330cbc98c1_1008_200.png?imageView&thumbnail=1008x0&quality=100&v=1) 2x);
+            background-image: -o-image-set(url(https://haitao.nos.netease.com/30bee055-69af-4f3a-a232-5f330cbc98c1_1008_200.png?imageView&thumbnail=504x0&quality=100&v=1) 1x, url(https://haitao.nos.netease.com/30bee055-69af-4f3a-a232-5f330cbc98c1_1008_200.png?imageView&thumbnail=1008x0&quality=100&v=1) 2x);
+            _background-image: url(https://haitao.nos.netease.com/30bee055-69af-4f3a-a232-5f330cbc98c1_1008_200.png?imageView&thumbnail=504x0&quality=100&v=1);
+        }
+
+    }
+}
+section {
+    width: 100%;
+    height: 600px;
+    border: 1px solid #e8e8ea;
+    background: #f8f8f8;
+    .section-con {
+        width: 1094px;
+        height: 600px;
+        position: relative;
+        margin: 0 auto;
+        .default-img {
+            position: absolute;
+            background-image: url(//haitao.nos.netease.com/d77e243d-d78e-4e04-bf3a-f9ef46644fdd_1_1.gif);
+            left: 10px;
+            top: 50%;
+            margin-top: -101px;
+            width: 400px;
+            height: 203px;
+        }
+        .loginWrap{
+            width: 350px;
+            border: 1px solid #eaeaea;
+            position: absolute;
+    z-index: 2;
+    top: 50%;
+    right: 40px;
+    width: 350px;
+    font-size: 12px;
+    transform: translateY(-50%);
+    border: 1px solid #eaeaea;
+    background-color: #fff;
+            .loginBoxes{
+            .top{
+                position: relative;
+                width: 350px;
+                height: 52px;
+                font-size: 16px;
+                line-height: 52px;
+                color: #333;
+                border-bottom: 1px solid #ddd;
+                background: #f8f8f8;
+                div{
+                    float: left;
+                    width: 175px;
+                    text-align: center;
+                    font-weight: 700
+                }
+                .header2{
+                    color: #e31436
+                }
+               
+                .line{
+                    height: 20px;
+                    width: 0;
+                    position: absolute;
+                    top: 17px;
+                    left: 175px;
+                    border-right: 1px solid #ddd
+                }
+            }
+            .container{
+                width: 350px;
+                background: #fff;
+        .m-cnt{
+            width: 270px;
+            padding:20px 40px 15px;
+            form{
+                .fur-change-email{
+                    position: relative;
+                    width: 320px;
+                    height: 16px;
+                    line-height: 16px;
+                    font-size: 12px
+                }
+                .inputBox{
+                    height: 34px;
+                    border: 1px solid #c5cddb;
+                    background: #fff;
+                    border-radius: 2px;
+                    input{
+                        width:268px;
+                        height: 31px;
+                        border: none;
+                        line-height: 31px;
+                        font-size: 14px;
+                    }
+                    .wwc-msg-block{
+                        color: red;
+                        font-size: 12px;
+                    }
+
+                }
+                .loginbox{
+                    margin-top:18px;
+                    margin-bottom:7px;
+                    .u-loginbtn{
+                        display: block;
+                        height: 36px;
+                        background: #e31436;
+                        color: #fff;
+                        border-radius: 2px;
+                        line-height: 36px;
+                        font-size: 14px;
+                        text-align: center;
+                        width:268px;
+                        border: 1px solid #e31436
+                    }
+                }
+                .m-unlogin{
+                    padding:0 0 15px 0;
+                    .b-unlogin{
+                        display: block;
+                        width: 104px;
+                        float: left;
+                        margin-right: 8px;
+                        .u-checkbox{
+                            display: block;
+                            float: left;
+                            // width: 14px;
+                            // height: 14px;
+                            // border: solid 1px #aaa;
+                            color: #999;
+                            font-size: 12px
+                        }
+                        label{
+                            display: block;
+                            float: left;
+                            height: 16px;
+                            padding-left:8px;
+                            font-size: 12px;
+                            color: #999;
+                            line-height: 17px
+        
+                        }
+                    }
+                     a:hover{
+                         
+                      color:red
+                }
+                   .bgcolor{
+                       text-decoration: none;
+                 color: #999;
+                   font-size: 12px;
+                 float: right;
+                 line-height: 16px;              
+                   } 
+                }
+            }
+        }
+        .proto{
+            font-size: 12px;
+            color: #ccc;
+            margin-left: 40px;
+            margin-bottom: 10px;
+            .proto-link{
+                color: #999;
+                a:hover{
+                    color: #999
+                }
+            }
+        }
+            }
+            .footer{
+                border: 1px solid #ccc;
+                padding: 10px 40px;
+                width: 270px;
+                height: 40px;
+                background: #f8f8f8;
+             .thirdlogin{
+                    float: left;
+                    width: 135px;
+                    list-style: none;
+                    
+                 .thirdicon{
+                    
+                     display: block;
+    position: relative;
+    float: left;
+    margin-right: 10px;
+    width: 22px;
+    height: 22px;
+    .w-icon-29{       
+            width: 22px;
+            height: 22px;
+            background-position: -760px -401px;
+        // background-position: -670px -401px;
+            display: inline-block;
+            background: url(https://mm.bst.126.net/images/index/icon1.png?832edc2…) no-repeat;
+    }
+    .w-icon-29-1[data-v-f2ea2484] {
+        background-position: -792px -401px;
+        background: url(https://mm.bst.126.net/images/index/icon1.png?832edc2…) no-repeat;
+        width: 22px;
+        height: 22px;
+    }
+                 }       
+             }  
+             .gotoreg{
+                 display: block;
+                 float: right;
+                 width: 95px;
+                 font-size: 12px;
+                 line-height: 22px;
+                 color: #e31436;
+                 text-align: center;
+                 padding-top: 16px             
+             } 
+            }
+            }
+            }
+    }
+}
+footer{
+    width:100%;
+    height: 154px;
+    margin-top: 0;
+    background: #fff;
+    border-top: 1px solid #eaeaea;
+    .footer-con{
+    margin: 0 auto;
+    width: 1094px;
+    height: 153px;
+    color: #666;
+    background: #fff;
+    position: relative;
+    padding: 20px 0;
+    // background: #333;
+    line-height: 26px;
+    font-size: 12px;
+    text-align: center;
+    img{
+    vertical-align: middle;
+    display: inline-block;
+    border: 0;
+    height: 30px;
+    margin: 5px 0 0 10px;
+    }
+    a {
+        color: inherit;
+        text-decoration: none;
+        outline: none;
+    }
+    a:hover {
+        color: #c2c2c2;
+    }
+    }
+}

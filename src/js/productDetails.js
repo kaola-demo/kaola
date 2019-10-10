@@ -1,3 +1,65 @@
+// 头部黑色导航栏
+$('header a').mouseenter(function () {
+    $(this).css("color", "#fff");
+}).mouseleave(function () {
+    $(this).css("color", "#999");
+});
+$('.header-con ul div a').mouseenter(function () {
+    $('.muLuText').css("display", "block");
+}).mouseleave(function () {
+    $('.muLuText').css("display", "none");
+});
+$("header .box").mouseenter(function () {
+    $(this).children('.link').css({
+        'color': 'red',
+        'background': '#fff'
+    }).next().css("display", "block");
+    $(this).children('.link').children('i').removeClass('fa-chevron-down').addClass('fa-chevron-up')
+});
+$("header .box").mouseleave(function () {
+    $(this).children('.link').css({
+        'color': '#999',
+        "background": "#000"
+    }).children('i').removeClass('fa-chevron-up').addClass('fa-chevron-down');
+    $(this).children(".submenu").css("display", "none")
+});
+$("header .submenu a").mouseenter(function () {
+    $(this).css("color", "red");
+}).mouseleave(function () {
+    $(this).css("color", "#000");
+});
+
+// logo存放区
+var MAX = 10;
+var inp = document.getElementById('topSearchInput');
+var ul = document.getElementById('xiaLa-wzj');
+inp.oninput = inp.onpropertychange = function () {
+    //在搜索框输入文本
+    var word = this.value; //输入框中的文本
+    //创建一个script标签用户请求数据
+    var script = document.createElement('script');
+    script.src = "https://www.baidu.com/sugrec?pre=1&p=3&ie=utf-8&json=1&prod=pc&from=pc_web&sugsid=1445,21092,18560,29518,28519,29099,29568,28833,29220,26350,29589&wd=" + word + "&req=2&pbs=%E7%99%BE%E5%BA%A6%E7%BF%BB%E8%AF%91&csor=5&pwd=baid&cb=show&_=1563970627537";
+
+    //创建一个函数,以备调用
+    window.show = function (data) {
+        console.log(data)
+        //获取结果数组
+        var list = data.g; //要先打印data查看结构
+        //定义ul里面的字符串
+        var str = "";
+        for (var i = 0; i < (list.length > MAX ? MAX : list.length); i++) {
+            str += "<li>" + list[i].q + "</li>";
+        };
+        ul.innerHTML = str;
+    }
+    //把生成的script标签放入body中
+    document.body.appendChild(script);
+    if (word == '') {
+        ul.style.display = 'none';
+    } else {
+        ul.style.display = 'block';
+    };
+}
 // 商品路径分类js
 $(function () {
     var Accordion = function (el, multiple) {
@@ -16,7 +78,8 @@ $(function () {
     }
     Accordion.prototype.dropdown = function (e) {
         var $el = e.data.el;
-        var $this = $(this), $next = $this.next();
+        var $this = $(this),
+            $next = $this.next();
         $next.slideToggle();
         $this.parent().toggleClass('open');
         if (!e.data.multiple) {
@@ -69,7 +132,7 @@ smallBox.onmousemove = function (e) {
     var PageX = evt.clientX + scroll().left;
     var PageY = evt.clientY + scroll().top;
     var x = PageX - container.offsetLeft - mask.offsetWidth / 2;
-    var y = PageY - smallBox.offsetTop - 115 - mask.offsetHeight / 2;
+    var y = PageY - smallBox.offsetTop - 250 - mask.offsetHeight / 2;
     // 模态框移动的边界检测
     var maxX = smallBox.clientWidth - mask.offsetWidth;
     var maxY = smallBox.clientHeight - mask.offsetHeight;
@@ -214,7 +277,7 @@ document.body.onscroll = function () {
 }
 // 改变数量
 $(document).ready(function () {
-    $(".numCutAdd input").val(5);
+    $(".numCutAdd input").val(1);
     $(".numCutAdd").on("click", "a:eq(0)", function () {
         var num = $(".numCutAdd input").val();
         if (num > 1) {
@@ -231,6 +294,18 @@ $(document).ready(function () {
 
     // 点击购物车
     $(document).ready(function () {
+        Numrend()
+        function Numrend() {
+            function getStorage() {
+                return JSON.parse(localStorage.getItem("list") || "[]");
+            }
+            var totalNum = 0;
+            for (var k = 0; k < getStorage().length; k++) {
+                totalNum++;
+            }
+            $("#fudong li:eq(1) a em")[0].innerHTML = totalNum;
+            $("#gouwucheNum")[0].innerHTML=totalNum;
+        }
         // 获取购物车按钮
         $(".buyBtns a:eq(1)").on("click", function () {
             // 获取图片路径
@@ -241,26 +316,42 @@ $(document).ready(function () {
             var productNum = $(".numCutAdd input").val();
             // 获取价格
             var price = $(".price-group .price-top span:eq(1) em")[0].innerHTML;
-            console.log(imgSrc);
-            var json = [{
+            var jsonArr = {
                 productImgSrc: imgSrc,
                 productMore: productMore,
                 productPrice: price,
                 productNum: productNum
-            }]
-            setStorage(json);
+            }
+            console.log(jsonArr);
+            var newjson = getStorage();
+            console.log(newjson);
+            if (newjson.length == 0) {
+                newjson.push(jsonArr);
+            } else {
+                for (var n = 0; n < newjson.length; n++) {
+                    if (newjson[n].productImgSrc == jsonArr.productImgSrc) {
+                        newjson[n].productNum = parseInt(newjson[n].productNum) + parseInt(jsonArr.productNum);
+                    } 
+                }
+                newjson.push(jsonArr);
+            }
+
+            setStorage(newjson);
 
             function setStorage(json) {
                 localStorage.setItem("list", JSON.stringify(json));
             }
 
+            function getStorage() {
+                return JSON.parse(localStorage.getItem("list") || "[]");
+            }
             var Top = document.documentElement.scrollTop;
             var _height = Top + 50;
             // 需求3：
             // 点击addToCart按钮时，页面中创建一个div圆点。
             var addToCart = $(".buyBtns a:eq(1)")[0];
             var shopCart = $("#fudong")[0];
-            var shopNum=$("#fudong li:eq(1) a em")[0];
+            var shopNum = $("#fudong li:eq(1) a em")[0];
             var product = document.createElement("div");
             product.className = "active";
             product.style.left = addToCart.offsetLeft + addToCart.offsetWidth / 2 + 'px';
@@ -294,7 +385,7 @@ $(document).ready(function () {
             var c = startPoint.y - a * startPoint.x * startPoint.x - b * startPoint.x;
             // 封装一个product沿抛物线运动的定时器函数.
             var speed = 5;
-            var productsNum=shopNum.innerHTML;
+            var productsNum = shopNum.innerHTML;
             clearInterval(timer);
             var timer = setInterval(function () {
                 var X = product.offsetLeft + speed;
@@ -303,11 +394,44 @@ $(document).ready(function () {
                 if (product.offsetLeft >= endPoint.x) {
                     clearInterval(timer);
                     // 设置一个计数器，每一次product标签运动到终点时，计数器加一。
-                    productsNum++;
-                    shopNum.innerHTML = productsNum;
+                    Numrend();
                     product.remove();
                 }
             }, 20)
         })
+
+
     })
 })
+
+
+
+
+
+
+
+$(document).ready(function () {
+    // 公共方法
+    var zidong = {
+        // 获取本地存储的数据的方法。
+        getStorage: function () {
+            return JSON.parse(localStorage.getItem("id") || "[]");
+        },
+
+        // 渲染购物车，根据本地存储中的数据，使本地存储中的数据展示在购物车中。
+        renderCar: function (products) {
+            console.log(products);
+            // 如果传入的数据为空，则清除购物车中的内容。
+            $("#smallImg")[0].src = products[0].src;
+            $("#bigImg")[0].src = products[0].src;
+            $("#BoxUl ul li:eq(0) img")[0].src = products[0].src;
+            $(".product-title")[0].innerHTML = products[0].productMore;
+            $(".price-top span:eq(1) em")[0].innerHTML = products[0].productPrice;
+        }
+    }
+    // 根据本地存储渲染购物车
+    zidong.renderCar(zidong.getStorage());
+})
+
+$('#fudong .tiaoZhuan').on("click", function () {$("html,body").stop(true).animate({
+    "scrollTop": 0})})

@@ -1,0 +1,257 @@
+//头部样式
+body{
+    margin: 0;
+    padding: 0;
+}
+header {
+    width: 100%;
+    height: 100px;
+    zoom: 1;
+    margin: 0 auto;
+    position: relative;
+
+    .header-con {
+        width: 1094px;
+        height: 100px;
+        margin: 0 auto;
+        position: relative;
+
+        .logo_kaola_new {
+            background-image: -webkit-image-set(url(//haitao.nos.netease.com/88330630-0c6e-4653-9f0a-92e9ae5a2f42_420_130.png?imageView&thumbnail=210x0&quality=85&v=1) 1x, url(//haitao.nos.netease.com/88330630-0c6e-4653-9f0a-92e9ae5a2f42_420_130.png) 2x);
+            position: absolute;
+            left: 0;
+            top: 20px;
+            width: 330px;
+            height: 65px;
+            line-height: 65px;
+            outline: none;
+            cursor: pointer;
+            z-index: 9;
+            background-repeat: no-repeat;
+            background-position: 0;
+            background-size: auto 65px;
+        }
+
+        .u-login_topimage {
+            position: absolute;
+            // top: -101px;
+            right: 40px;
+            z-index: 200;
+            height: 100px;
+            width: 504px;
+            background-image: -webkit-image-set(url(https://haitao.nos.netease.com/30bee055-69af-4f3a-a232-5f330cbc98c1_1008_200.png?imageView&thumbnail=504x0&quality=100&v=1) 1x, url(https://haitao.nos.netease.com/30bee055-69af-4f3a-a232-5f330cbc98c1_1008_200.png?imageView&thumbnail=1008x0&quality=100&v=1) 2x);
+            background-image: -moz-image-set(url(https://haitao.nos.netease.com/30bee055-69af-4f3a-a232-5f330cbc98c1_1008_200.png?imageView&thumbnail=504x0&quality=100&v=1) 1x, url(https://haitao.nos.netease.com/30bee055-69af-4f3a-a232-5f330cbc98c1_1008_200.png?imageView&thumbnail=1008x0&quality=100&v=1) 2x);
+            background-image: -ms-image-set(url(https://haitao.nos.netease.com/30bee055-69af-4f3a-a232-5f330cbc98c1_1008_200.png?imageView&thumbnail=504x0&quality=100&v=1) 1x, url(https://haitao.nos.netease.com/30bee055-69af-4f3a-a232-5f330cbc98c1_1008_200.png?imageView&thumbnail=1008x0&quality=100&v=1) 2x);
+            background-image: -o-image-set(url(https://haitao.nos.netease.com/30bee055-69af-4f3a-a232-5f330cbc98c1_1008_200.png?imageView&thumbnail=504x0&quality=100&v=1) 1x, url(https://haitao.nos.netease.com/30bee055-69af-4f3a-a232-5f330cbc98c1_1008_200.png?imageView&thumbnail=1008x0&quality=100&v=1) 2x);
+            _background-image: url(https://haitao.nos.netease.com/30bee055-69af-4f3a-a232-5f330cbc98c1_1008_200.png?imageView&thumbnail=504x0&quality=100&v=1);
+        }
+
+    }
+}
+section {
+    width: 100%;
+    height: 600px;
+    border: 1px solid #e8e8ea;
+    background: #f8f8f8;
+    .section-con {
+        width: 1094px;
+        height: 600px;
+        position: relative;
+        margin: 0 auto;
+        .default-img {
+            position: absolute;
+            background-image: url(//haitao.nos.netease.com/d77e243d-d78e-4e04-bf3a-f9ef46644fdd_1_1.gif);
+            left: 10px;
+            top: 50%;
+            margin-top: -101px;
+            width: 400px;
+            height: 203px;
+        }
+        #box{
+            position: absolute;
+    z-index: 2;
+    top: 50%;
+    right: 40px;
+    width: 350px;
+    font-size: 12px;
+    transform: translateY(-50%);
+    border: 1px solid #eaeaea;
+    background-color: #fff;
+
+          
+            .header{
+                background: #f8f8f8;
+                height: 49px;
+                border-bottom: 1px solid #ccc;
+                .right{
+                    font-size: 14px;
+                    width: 175px;
+                    text-align: center;
+                    color: #e85b36;
+                    line-height: 50px;
+                    float: left;
+            
+                }
+                .left{
+                    font-size: 12px;
+                    width: 175px;
+                    text-align: center;
+                    color: black;
+                    line-height: 50px;
+                    float: left;
+                    a{
+                        text-decoration: none;
+                        color: skyblue;
+                    }
+                }
+            
+            }
+            
+            #center{
+            background: white;
+            
+             .ft{
+                width: 270px;
+                height: 256px;
+                padding:20px 20px ;
+            #btnbox{
+                border: 1px solid #ccc;
+                border-radius: 4px;
+            }
+                .tab{
+                width:264px;
+                height: 36px;
+               color: #666666;
+               background: #fff;
+               font-size: 12px
+                   }
+                   .box2{
+                       margin-top: 16px;
+                       width:270px;
+                       height: 42px;
+                     .tel{
+                    width:175px;
+                    height: 36px;
+                   color: #666666;
+                   background: #fff;
+                   font-size: 12px;
+                   float: left 
+                   }
+                   .a1{
+                       width: 90px;
+                       height: 42px;
+                       background: lightgray;
+                       color: black;
+                       font-size: 14px;
+                       border-left:1px solid #cccccc;
+                       text-align: center;
+                       line-height: 42px;
+                       display: block;
+                       float: right;
+                     
+                   }  
+                   .a1:hover{
+                       background: #eeeeee;
+                       color: red
+                   }
+                   }
+                   .m-nerror{
+                       margin-top:6px;
+                     overflow: hidden;
+                 
+                      .ferrorhead{
+                           color: red;
+                           font-size: 12px;
+                           width: 298px;
+                           line-height: 20px;
+                           margin-top:-3px;
+                           vertical-align: top;
+                           height: 20px
+                          
+
+                      }
+                   }
+                   .box4{
+                       margin-top: 8px;
+                      #btns{
+                       background: #e31436;
+                       color:#fff;
+                       font-size: 14px;
+                       width: 268px;
+                       height: 36px;
+                       text-align: center;
+                       line-height: 36px;
+                       display: block;
+                       border: none
+                         }
+                   }
+                   .box5{
+                       margin-top:8px;
+                        color: #999999;
+                           font-size: 12px;
+                       
+                       a{
+                           text-decoration: none;
+                           color: #999999
+                       };
+                       a:hover{
+                        color: black
+                       }
+                   }
+                   
+               }
+              }
+            
+            }
+
+
+
+
+
+
+
+
+
+    }
+}
+footer{
+    width:100%;
+    height: 154px;
+    margin-top: 0;
+    background: #fff;
+    border-top: 1px solid #eaeaea;
+    .footer-con{
+        margin: 0 auto;
+        width: 1094px;
+        height: 153px;
+        color: #666;
+    background: #fff;
+    position: relative;
+    padding: 20px 0;
+    // background: #333;
+    line-height: 26px;
+    font-size: 12px;
+    text-align: center;
+    img{
+        vertical-align: middle;
+    display: inline-block;
+    border: 0;
+    height: 30px;
+    margin: 5px 0 0 10px;
+    }
+    a {
+        color: inherit;
+        text-decoration: none;
+        outline: none;
+    }
+
+
+
+
+
+
+    a:hover {
+        color: #c2c2c2;
+    }
+    }
+}

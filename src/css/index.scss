@@ -1,0 +1,629 @@
+// 头部黑色导航栏
+header{
+    width: 100%;
+    height:30px;
+    background: black;
+    .header-con{
+        width: 1094px;
+        height: 100%;
+        margin: 0 auto;
+        ul:nth-child(1){
+           float: left;
+            li{
+                float: left;
+                font-size: 12px;
+                line-height: 30px;
+                color: #999;
+                width: 72px;
+                height: 100%;
+                text-align: center;
+                a{
+                    cursor:pointer;
+                    color: #999;
+                }
+            }
+            div{
+                float: left;
+                margin-left: 20px;
+                width: 76px;
+                height: 100%;
+                text-align: center;
+                font-size: 12px;
+                line-height: 30px;
+                position: relative;
+                a{
+                    cursor:pointer;
+                    color: #999;
+                }
+                div{width: 118px;
+                    height: 150px;
+                    color: red;
+                    position: absolute;
+                    left:-43px;
+                    top: 36px;
+                    line-height: 17px;
+                    z-index: 99;
+                    display: none;
+                    background: #fff;
+                    border: 1px solid #ccc;
+                }
+            }
+        }
+        ul:nth-child(2){
+            float: right;
+            li{float: left;
+                font-size: 12px;
+                line-height: 30px;
+                color: #999;
+                width: 76px;
+                height: 100%;
+                text-align: center;
+                a{
+                    cursor:pointer;
+                    color: #999;
+                }
+            }
+            .box{
+                cursor: pointer;
+                position: relative;
+                z-index: 99;
+                .submenu{
+                    position: absolute;
+                    background: #fff;
+                    display: none;
+                    float: left;
+                    border: 1px solid #999;
+                    padding:0 10px;
+                    a{
+                    cursor:pointer;
+                    color: #000;
+                }
+            }
+            }
+        }
+    }
+}
+// logo存放区
+.logo{
+    height: 100px;
+    width: 100%;
+    .logo-con{
+        width: 1094px;
+        height: 100%;
+        margin: 0 auto;
+        position: relative;
+        .logo_kaola_new {
+            background-image: -webkit-image-set(url(//haitao.nos.netease.com/88330630-0c6e-4653-9f0a-92e9ae5a2f42_420_130.png?imageView&thumbnail=210x0&quality=85&v=1) 1x,url(//haitao.nos.netease.com/88330630-0c6e-4653-9f0a-92e9ae5a2f42_420_130.png) 2x);
+            position: absolute;
+            left: 0;
+            top: 20px;
+            width: 330px;
+            height: 65px;
+            line-height: 65px;
+            outline: none;
+            cursor: pointer;
+            z-index: 9;
+            background-repeat: no-repeat;
+            background-position: 0;
+            background-size: auto 65px;
+        }
+        #topsearch {
+            width: 520px;
+            height: 40px;
+            padding-left: 1px;
+            background-color: #ff2337;
+            border-radius: 40px;
+            position: absolute;
+            left: 350px;
+            top: 20px;
+            .wrap {
+                float: left;
+                margin: 2px 1px;
+                padding: 6px 39px 6px 30px;
+                background-color: #fff;
+                height: 36px;
+                border-radius: 24px 0 0 24px;
+                #topSearchInput {
+                    width: 410px;
+                    *width: 418px;
+                    height: 24px;
+                    *height: 23px;
+                    line-height: 24px;
+                    border: 0;
+                    font-size: 13px;
+                }
+                #xiaLa-wzj{
+                    position: absolute;
+                    z-index: 10;
+                    top: 40px;
+                    left: 10px;
+                    padding: 0 6px;
+                    display: none;
+                    width:490px;
+                    background: #fff;
+                    border: 1px solid #ccc;
+                    li{
+                        position: relative;
+                        z-index: 10;
+                       font-size: 13px;
+                       line-height:30px;
+                       cursor:pointer;
+                       &:hover{color: red;}
+                    }
+                }
+            }
+            .ul-wzj{
+                line-height: 22px;
+                margin-top: 4px;
+                width: 462px;
+                height: 22px;
+                overflow: hidden;
+                li{
+                    float: left;
+                    white-space: nowrap;
+                    margin-left: 30px;
+                    a{
+                        color: #ccc;
+                        cursor: pointer;
+                    }
+                }
+            }
+            .topsearchboxBackGround {
+                width: 60px;
+                height: 40px;
+                background: #ff2337;
+                background-image: linear-gradient(270deg,#ff2e64,#ff0003);
+                border-radius: 40px;
+                position: absolute;
+                top: 0;
+                right: 0;
+                #topSearchBtn {
+                    display: inline-block;
+                    height: 40px;
+                    width: 50px;
+                    font-size: 19px;
+                    line-height: 40px;
+                    color: #fff;
+                    text-align: center;
+                    cursor: pointer;
+                    position: absolute;
+                    top: 0;
+                    right: 5px;
+                    background: url(https://haitao.nos.netease.com/6e4da089-9347-4dc2-be19-4962832a4a5c.png?imageView&thumbnail=20x0&quality=85&v=1) no-repeat 50%;
+                    background-image: -webkit-image-set(url(https://haitao.nos.netease.com/6e4da089-9347-4dc2-be19-4962832a4a5c.png?imageView&thumbnail=20x0&quality=85&v=1) 1x,url(https://haitao.nos.netease.com/6e4da089-9347-4dc2-be19-4962832a4a5c.png?imageView&thumbnail=40x0&quality=85&v=1) 2x);
+                }
+            }  
+        }
+        button{position: absolute;
+            background: #fff;
+            top: 20px;
+            right: 90px;
+            padding: 10px 20px;
+            color: #ff1e32 ;
+            border: 1px solid #ff1e32;
+            #gouwucheNum{
+                margin-top:2px;
+                margin-left: 2px;
+                float: right;
+                display: block;
+                width: 16px;
+                height: 16px;
+                line-height: 16px;
+                text-align: center;
+                font-size: 12px;
+                color: #fff;
+                background: #ff1e32;
+                border-radius: 50%;
+            }
+        &:hover{background: #fff4f5}
+    }
+    }
+}
+
+// 导航栏部分
+.daoHang{
+    width: 100%;
+    height:40px;
+    .daoHang-con{
+        width: 1094px;
+        height: 100%;
+        margin: 0 auto;
+        position: relative;
+        z-index: 9;
+        ul{ width: 164px;
+            height: 100%;
+            float: left;
+            margin-right: 30px;
+            &:hover{
+                .liBox{
+                    display: block;
+                }
+            }
+            li{
+                text-align: center;
+                font-size: 14px;
+                line-height: 45px;
+                cursor: pointer;
+                height: 100%;
+                background:#ff2850;
+                color: #fff; 
+                border: 1px solid #ff2850;
+            }
+            .liBox{
+                border: 1px solid #ff2850;
+                display: none;
+                &:hover{
+                    background: #fff;
+                    color: #ff2850;
+                    div{display: block;}
+                }
+                .box-wzj{
+                    position: absolute;
+                    z-index: 9;
+                    left: 164px;
+                    top: 40px;
+                    width: 900px;
+                    height: 462px;
+                    border: 1px solid red;
+                    display: none;
+                    .word{width: 650px;
+                        height:458px;
+                        background: #fff;
+                        float: left;
+                        .item{width: 300px;
+                           float: left;
+                           margin-left: 5px;
+                           margin-bottom: 20px;
+                        .title{
+                            height: 30px;
+                            width:300px;
+                            line-height: 30px;
+                            float: left;
+                            border-bottom: 1px solid #ccc;
+                            a{display: block;
+                            font-weight: 600;
+                            color: #000;
+                        &:hover{color:red}}
+                        }
+                       .ctgnamebox{
+                           a{  display: block;
+                               line-height: 30px;
+                               float: left;
+                               margin:0 5px;
+                               color: #000;
+                               &:hover{color:red}
+                           }
+                        }
+                       }
+                    }
+    
+                    .imgBOX{position: absolute;
+                        top: 0;
+                        right: 0;
+                          width: 280px;
+                          background: #f6f6f6;
+                          float: left;
+                          a{
+                        margin: 5px;
+                    }
+                    }
+                    
+                }
+            }
+            
+        }  
+        ol{
+            float: left;
+            li{ position: relative;
+                float: left;
+                margin: 0 20px;
+                line-height: 40px;
+                font-size: 14px;
+                font-weight: 600;
+                a{
+                    cursor: pointer;
+                    color: #000;
+                    &:hover{
+                        color: red;
+                    }
+                }
+            
+            }
+        }  
+    }
+}
+
+// 轮播图部分
+.banner{
+       width: 100%;
+       height: 400px;
+    .swiper-container {
+        width: 100%;
+        height:400px;
+        top: -10px;
+      }
+}
+
+// 正 低 退 邮
+.zheng{margin-top: 80px;
+    width: 100%;
+    height: 147px;
+    border-top: 1px solid #ccc;
+    .zheng-con{
+        width: 1094px;
+        height: 100%;
+        margin: 0 auto;
+        .clearfix{
+            padding: 49px 0;
+            li{float: left;
+                width: 233px;
+                margin-left: 40px;
+                .btmIcon{width: 44px;
+                    height: 44px;
+                    border-radius: 50%;
+                    border: 2px solid #d6d6d6;
+                    text-align: center;
+                    line-height: 44px;
+                    font-size: 20px;
+                    font-weight: 700;
+                    display: inline-block;
+                    float: left;
+                    margin-right: 12px;}
+                .tit{font-size: 18px;
+                    font-weight: 700;
+                    line-height: 22px;
+                    display: block;
+                }
+                .desc{font-size: 14px;
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+// 二维码部分
+.erWei{
+    height: 263px;
+    width: 100%;
+    .erWei-con{
+        width: 1094px;
+        height: 100%;
+        margin: 0 auto;
+        border-top: 1px solid #ccc;
+        padding: 45px 0 90px;
+        li{float: left;
+            width: 120px;
+            padding: 0 0 0 21px;
+            height: 128px;
+            dt{
+                margin: -4px 0 10px;
+                em{font-size: 18px;
+                    font-weight:400;}
+            }
+            dd{line-height: 29px;
+               a{color: #000}}
+        }
+        .item-last{
+            padding: 0;
+            text-align: center;
+            float: left;
+            margin-left: 20px;
+            font-size: 12px;
+        }
+        .first{position: relative;
+            width: 218px;
+            padding-right: 40px;
+            padding-left: 0;
+            margin-right: 48px;
+             a{display: block;}
+            .focuson{
+                 height: 32px;
+                 line-height: 32px;
+                .label{
+                     font-size: 12px;
+                     color: #000;
+                    font-weight: 100;}
+                .itm1{
+                    display: block;
+                    position: relative;
+                    &:hover{img{display: block;}}
+                    em{display: block;
+                        position: absolute;
+                        top:-30px;
+                        left: 84px;
+                    }
+                    span{
+                    img{float: left;
+                    display:none;
+                    position: absolute;
+                    top: 0;
+                    left: 47px;
+                    }
+                    }}
+                .itm2{
+                    display: block;
+                    position: relative;
+                    &:hover{img{display: block;}}
+                    em{display: block;
+                        position: absolute;
+                        top:-30px;
+                        left:132px;
+                    }
+                    span{
+                    img{
+                        float: left;
+                        display:none;
+                        position: absolute;
+                        top: 0;
+                        left: 100px;
+                    }
+                }
+                
+            }
+        }
+    }
+ }
+}
+
+// 黑色底部
+footer{
+    height: 175px;
+    width: 100%;
+    background: #333;
+    .foot-con{
+        width: 1094px;
+        height: 100%;
+        margin: 0 auto;
+        #aboutNEST {
+            position: relative;
+            padding: 20px 0;
+            line-height: 26px;
+            text-align: center;
+            a{color: #ccc}
+            span{color: #ccc}
+        }
+    }
+}
+
+// 新老顾客区
+.cumstor{
+    width: 100%;
+    height: 500px;
+    .cumstor-con{
+        width: 1094px;
+        height: 100%;
+        margin: 0 auto;
+        background: #f6f6f6;
+        .a1-wzj{
+            height: 265px;
+            border-bottom: 1px solid #ccc;
+            padding: 0 20px;
+            p{width: 100%;
+            text-align:center;
+            font-size: 28px;
+            color:#c54559;
+            line-height: 72px;
+            }
+           a{float: left;
+            display: block;
+            width: auto;
+            margin:0 16px;
+            cursor: pointer;}
+        }
+        .a2-wzj{
+            padding: 0 20px;
+            p{width: 100%;
+            text-align:center;
+            font-size: 28px;
+            color:#c54559;
+            line-height: 72px;
+            }
+           a{float: left;
+            display: block;
+            width: auto;
+            margin:0 12px;
+            cursor: pointer;}
+        }
+    }
+}
+
+// 图区
+.tu-wzj{
+    height: 300px;
+    width: 100%;
+    margin: 10px 0;
+    .tu-wzj-con{
+        margin: 0 auto;
+        width: 1094px;
+        height: 100%;
+        padding: 0 10px;
+        a{margin:0 18px;}
+    }
+}
+
+// section商品页
+section{
+    width: 100%;
+    .section-con{
+        width: 1094px;
+        height: 100%;
+        margin: 0 auto;
+        .box-a{
+            background: #ccc;
+            width: 100%;
+            overflow: hidden;
+            p{
+              background: rgb(227, 20, 54);
+              color: #fff;
+              text-align: center;
+              padding: 0 5px;
+              height: 60px;
+              line-height: 60px;
+              font-size: 28px; 
+            }
+            li{width: 20%;
+               height: 320px;
+               padding: 0 2.5px 25px;
+               overflow: visible;
+               position: relative;
+               float: left;
+               &:hover{
+                   padding:0 2.5px 5px;
+                   .hezi{border:1px solid red;
+                   .goods-btn-span{bottom: 20px;}
+                }
+               }
+               cursor: pointer;
+               .hezi{background: #fff;
+                   height:100%;
+                   width: 100%;
+                   img{
+                       width: 192px;
+                       height: 192px;
+                   }
+                h5{ font-weight: 700;
+                    a{ display: block;
+                        color: #000;
+                        width: 100%;}
+                    .lll{overflow: hidden;
+                        text-overflow:ellipsis;
+                        white-space: nowrap;
+                    }
+                }
+                .price{ font-weight: 400;
+                        font-size: 20px;
+                         .rmb{font-size: 12px;}}
+                .goods-btn-span{position: absolute;
+                                bottom: 45px;
+                                right: 10px;
+                                color: #fff;
+                                padding:3px;
+                                font-size: 12px;}
+            }
+            }
+        }
+    }
+}
+
+// 楼层效果
+.louCeng{display: none;
+         position: fixed;
+         z-index: 100;
+         right:130px;
+         top: 220px;
+         height: 320px;
+         width: 100px;
+         background: red;
+         li{width: 100%;
+            text-align: center;
+             height:30px;
+             line-height: 30px;
+             color: #fff;
+             border-top:1px solid #ccc;
+             border-bottom:1px solid #ccc;  
+             cursor: pointer;
+         }
+
+}
+.active{background: orange}

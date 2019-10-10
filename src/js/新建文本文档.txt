@@ -1,0 +1,12 @@
+[
+    {"id":1,"src1":"../images/1.1.jpg","src2":"../images/1.1.jpg","src3":"../images/1.1.jpg","src4":"../images/1.1.jpg","src5":"../images/1.1.jpg","productMore":"【修颜提亮】LΛNEIGE 兰芝 雪纱丝柔防晒新款隔离霜 30毫升","productPrice":"118"},
+    {"id":2,"src1":"../images/2.1.jpg","src2":"../images/2.2.jpg","src3":"../images/2.3.jpg","src4":"../images/2.3.jpg","src5":"../images/2.3.jpg","productMore":"【第二件半价】【李佳琦力荐】冰希黎流沙金女士香水60ml持久淡香学生少女清新幻彩鎏金网红香水","productPrice":"158"},
+    {"id":3,"src1":"../images/3.1.jpg","src2":"../images/3.2.jpg","src3":"../images/3.3.jpg","src4":"../images/3.3.jpg","src5":"../images/3.3.jpg","productMore":"【泫雅、Jennie同款发色】爱茉莉mise en scène美妆仙 魅尚萱植物性泡沫韩式染发剂  95克温和不伤发植物系列","productPrice":"49"},
+    {"id":4,"src1":"../images/4.1.jpg","src2":"../images/4.1.jpg","src3":"../images/4.1.jpg","src4":"../images/4.1.jpg","src5":"../images/4.1.jpg","productMore":"SHISEIDO 资生堂旗下HANDCREAM 美润 药用美肌护手霜 100克/罐 2罐装","productPrice":"68"},
+    {"id":5,"src1":"../images/5.1.jpg","src2":"../images/5.2.jpg","src3":"../images/5.3.jpg","src4":"../images/5.3.jpg","src5":"../images/5.3.jpg","productMore":"【热销款】Babytry蓓臣  婴幼儿毛绒安抚巾bb布偶棒套装 可入口宝宝睡眠手偶玩具","productPrice":"49"},
+    {"id":6,"src1":"../images/6.1.jpg","src2":"../images/6.2.jpg","src3":"../images/6.3.jpg","src4":"../images/6.3.jpg","src5":"../images/6.3.jpg","productMore":"考拉工厂店 上汤粉丝 杯装70g","productPrice":"16"},
+    {"id":7,"src1":"../images/7.1.jpg","src2":"../images/7.2.jpg","src3":"../images/7.3.jpg","src4":"../images/7.3.jpg","src5":"../images/7.3.jpg","productMore":"【网红爆款】日常妆容化妆套刷5支装","productPrice":"129"},
+    {"id":8,"src1":"../images/8.1.jpg","src2":"../images/8.2.jpg","src3":"../images/8.3.jpg","src4":"../images/8.3.jpg","src5":"../images/8.3.jpg","productMore":"魔力风车珍藏整箱 750ml*6","productPrice":"266"},
+    {"id":9,"src1":"../images/9.1.jpg","src2":"../images/9.2.jpg","src3":"../images/9.3.jpg","src4":"../images/9.3.jpg","src5":"../images/9.3.jpg","productMore":"考拉工厂店 顺滑挺括有型双面丝光长绒棉经典款女装T恤","productPrice":"129"},
+    {"id":10,"src1":"../images/10.1.jpg","src2":"../images/10.2.jpg","src3":"../images/10.3.jpg","src4":"../images/10.3.jpg","src5":"../images/10.3.jpg","productMore":"考拉工厂店 顺滑挺括有型双面丝光长绒棉经典款女装T恤","productPrice":"289"}
+ ]
