@@ -147,4 +147,4 @@ $(window).scroll(function () {
 })
 
 // 购物车
-$('.shop').on("click", function () { window.open("./productDetails.html");})
+$('.shop').on("click", function () { window.open("./shoppingCart.html");})
